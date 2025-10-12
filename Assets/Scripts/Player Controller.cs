@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private Transform gizmos;
     [SerializeField] float boxLenght;
     [SerializeField] float boxWidth;
+    [SerializeField] GameObject projectilePrefab;
 
     void Update()
     {
@@ -17,6 +18,10 @@ public class PlayerController : MonoBehaviour
         var pos = transform.position;
         pos.x = Mathf.Clamp(pos.x, -xRange, xRange);
         transform.position = pos;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+
     }
 
     private void OnDrawGizmos()
