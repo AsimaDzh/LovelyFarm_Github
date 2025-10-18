@@ -486,8 +486,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5979190385624975433}
   - component: {fileID: 5295273704558521910}
-  - component: {fileID: 2335974468491065485}
   - component: {fileID: 7024977536819576907}
+  - component: {fileID: 6878336471486746648}
   m_Layer: 0
   m_Name: White Chiki
   m_TagString: Untagged
@@ -530,19 +530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d33fe95b9ccf4542a72767baafff1ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
---- !u!114 &2335974468491065485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3943631360673760497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6af6aa746887210488ae580a0b33defa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  speed: 4
 --- !u!95 &7024977536819576907
 Animator:
   serializedVersion: 7
@@ -565,6 +553,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6878336471486746648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3943631360673760497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af6aa746887210488ae580a0b33defa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4181783019693306653
 GameObject:
   m_ObjectHideFlags: 0

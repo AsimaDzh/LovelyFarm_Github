@@ -1084,8 +1084,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1211034476971467680}
   - component: {fileID: 2916334189514154156}
-  - component: {fileID: 7079055801765229307}
   - component: {fileID: 76726301817933352}
+  - component: {fileID: 6946765320318935254}
   m_Layer: 0
   m_Name: Brown Petya
   m_TagString: Untagged
@@ -1129,18 +1129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
---- !u!114 &7079055801765229307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7572042470477929692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6af6aa746887210488ae580a0b33defa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &76726301817933352
 Animator:
   serializedVersion: 7
@@ -1163,6 +1151,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6946765320318935254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7572042470477929692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af6aa746887210488ae580a0b33defa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7676726768133369409
 GameObject:
   m_ObjectHideFlags: 0

@@ -261,8 +261,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3769284179684266360}
   - component: {fileID: 5235110386486247}
-  - component: {fileID: 1167983447136511708}
   - component: {fileID: 1640568016021768432}
+  - component: {fileID: 1475950893434572245}
   m_Layer: 0
   m_Name: Pipipipi
   m_TagString: Untagged
@@ -299,19 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d33fe95b9ccf4542a72767baafff1ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
---- !u!114 &1167983447136511708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5647063679281178436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6af6aa746887210488ae580a0b33defa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!95 &1640568016021768432
 Animator:
   serializedVersion: 7
@@ -334,6 +322,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1475950893434572245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5647063679281178436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af6aa746887210488ae580a0b33defa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6456935003080845412
 GameObject:
   m_ObjectHideFlags: 0
