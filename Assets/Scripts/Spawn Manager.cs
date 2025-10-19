@@ -6,15 +6,18 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private float spawnRangeX = 10;
     [SerializeField] private float spawnPosZ = 20;
 
-    void Update()
+    [SerializeField] private float startDelay = 2f;
+    [SerializeField] float spawnInterval = 1.5f;
+
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            int animalIndex = Random.Range(0, animalPrefabs.Length);
-            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
-            Instantiate(animalPrefabs[animalIndex],
-                spawnPos,
-                animalPrefabs[animalIndex].transform.rotation);
-        }
+        InvokeRepeating("SpawnRandomInterval", startDelay, spawnInterval);
+    }
+
+    void SpawnRandomInterval()
+    {
+        int animalIndex = Random.Range(0, animalPrefabs.Length);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
     }
 }
