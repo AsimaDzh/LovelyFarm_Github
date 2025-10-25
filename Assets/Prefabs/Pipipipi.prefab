@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 4051454647811041651}
   m_Layer: 0
   m_Name: Pipipipi
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d33fe95b9ccf4542a72767baafff1ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  foodSpeed: 40
 --- !u!95 &1640568016021768432
 Animator:
   serializedVersion: 7

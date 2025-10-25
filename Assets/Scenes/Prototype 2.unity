@@ -3425,6 +3425,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 795180341124085748, guid: 3cf7f489270aac84fb12901330960a5b, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 795180341124085748, guid: 3cf7f489270aac84fb12901330960a5b, type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 795180341124085748, guid: 3cf7f489270aac84fb12901330960a5b, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.11808468
+      objectReference: {fileID: 0}
+    - target: {fileID: 795180341124085748, guid: 3cf7f489270aac84fb12901330960a5b, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.4037736
+      objectReference: {fileID: 0}
+    - target: {fileID: 795180341124085748, guid: 3cf7f489270aac84fb12901330960a5b, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.3210732
+      objectReference: {fileID: 0}
     - target: {fileID: 1010178144368890077, guid: 3cf7f489270aac84fb12901330960a5b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0
@@ -5217,7 +5237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1697486705
 RectTransform:
   m_ObjectHideFlags: 0

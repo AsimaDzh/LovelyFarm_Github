@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 821301375911639804}
   m_Layer: 0
   m_Name: White Chiki
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d33fe95b9ccf4542a72767baafff1ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  foodSpeed: 40
 --- !u!95 &7024977536819576907
 Animator:
   serializedVersion: 7

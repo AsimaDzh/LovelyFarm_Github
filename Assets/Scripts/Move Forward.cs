@@ -2,11 +2,19 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    [SerializeField] float speed = 40f;
+    [SerializeField] float foodSpeed = 40f;
+    private float speedAnimal;
 
+    void Start()
+    {
+        speedAnimal = Random.Range(1, 5);
+    }
 
     void Update()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        if (this.CompareTag("Food"))
+            transform.Translate(Vector3.forward * foodSpeed * Time.deltaTime);
+        else if (this.CompareTag("Animal"))
+            transform.Translate(Vector3.forward * speedAnimal * Time.deltaTime);
     }
 }
