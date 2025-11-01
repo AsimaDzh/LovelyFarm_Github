@@ -5,12 +5,32 @@ public class HeartSystem : MonoBehaviour
     public GameObject[] hearts;
     public int health;
 
-    public void LoseHealth()
-    {
-        if (health > 0)
-            health--;
+    private bool isDead;
+    private UIManager uiManager;
 
-        else if (health <= 0)
+    void Start()
+    {
+        health = hearts.Length;
+        uiManager = GameObject.Find("UI Manager").GetComponent<UIManager>();
+    }
+
+    void Update()
+    {
+        if (isDead == true)
+        {
+            uiManager.ShowGameOverPanel();
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {         
+        health -= damage;
+        Destroy(hearts[health].gameObject);
+
+        if (health < 1)
+        {
             health = 0;
+            isDead = true;
+        }
     }
 }

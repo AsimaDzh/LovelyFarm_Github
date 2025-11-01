@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float horizontalInput;
+    private float horizontalInput;
     [SerializeField] float speed = 10f;
     [SerializeField] float xRange = 10f;
     private Transform gizmos;
