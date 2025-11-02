@@ -3911,9 +3911,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1148951284}
-  smoothSpeed: 5
-  offset: {x: 0, y: 20, z: 3}
-  minValue: {x: 1, y: 25, z: 5}
+  smoothSpeed: 2
+  offset: {x: -1, y: 30, z: -3}
+  minValue: {x: -1, y: -25, z: -5}
   maxValue: {x: 1, y: 25, z: 5}
 --- !u!1 &1197157982
 GameObject:
