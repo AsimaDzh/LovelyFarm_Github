@@ -1,4 +1,4 @@
-using UnityEngine;
+п»їusing UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        scoreTextUI.text = "Заработано очков: " + scoreManager.score.ToString();
+        scoreTextUI.text = "Points earned: " + scoreManager.score.ToString();
     }
 
     public void ShowGameOverPanel()

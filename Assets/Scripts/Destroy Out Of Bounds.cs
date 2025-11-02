@@ -3,7 +3,7 @@ using UnityEngine;
 public class DestroyOutOfBounds : MonoBehaviour
 {
     private float topBound = 30.0f;
-    private float lowerBound = -10.0f;
+    private float lowerBound = -4.0f;
     private HeartSystem heartSystem;
 
     void Awake()
