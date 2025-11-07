@@ -2,11 +2,15 @@ using UnityEngine;
 
 public class SmoothCamera : MonoBehaviour
 {
-    [SerializeField] private Transform playerTransform = null;
+    private Transform playerTransform = null;
     [SerializeField] private float smoothSpeed = 5f;
     [SerializeField] private Vector3 offset;
     [SerializeField] private Vector3 minValue, maxValue;
 
+    private void Start()
+    {
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+    }
 
     void LateUpdate()
     {
