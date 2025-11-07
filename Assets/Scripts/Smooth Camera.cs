@@ -2,19 +2,14 @@ using UnityEngine;
 
 public class SmoothCamera : MonoBehaviour
 {
-    private Transform playerTransform = null;
+    [SerializeField] private Transform lookAt = null;
     [SerializeField] private float smoothSpeed = 5f;
     [SerializeField] private Vector3 offset;
     [SerializeField] private Vector3 minValue, maxValue;
 
-    private void Start()
-    {
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-    }
-
     void LateUpdate()
     {
-        Vector3 desiredPosition = playerTransform.position + offset;
+        Vector3 desiredPosition = lookAt.position + offset;
         
         Vector3 clampPosition = new Vector3(
             Mathf.Clamp(desiredPosition.x, minValue.x, maxValue.x),
@@ -28,6 +23,6 @@ public class SmoothCamera : MonoBehaviour
 
         transform.position = smoothPosition;
 
-        transform.LookAt(playerTransform);
+        transform.LookAt(lookAt);
     }
 }

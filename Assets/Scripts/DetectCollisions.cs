@@ -1,23 +1,21 @@
-
 using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    private ScoreManager scoreManager;
-
+    private EnemyHeartSystem enemyHeartSystem;
 
     void Start()
     {
-        scoreManager = GameObject.Find("Score Manager").GetComponent<ScoreManager>();
+        enemyHeartSystem = GetComponent<EnemyHeartSystem>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Food"))
         {
-            scoreManager.AddScore(1);
-            Destroy(gameObject);
             Destroy(other.gameObject);
+            if (enemyHeartSystem != null)
+                enemyHeartSystem.TakeDamage(1);
         }
     }
 }
