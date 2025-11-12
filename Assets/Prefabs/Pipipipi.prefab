@@ -531,6 +531,7 @@ MonoBehaviour:
   enemyHearts:
   - {fileID: 8024232157025250337}
   health: 1
+  deathParticles: {fileID: 8866347581163888692, guid: fb81731867964cb458a8a05745f55070, type: 3}
 --- !u!114 &1475950893434572245
 MonoBehaviour:
   m_ObjectHideFlags: 0

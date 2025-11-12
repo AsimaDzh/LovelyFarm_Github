@@ -1703,6 +1703,7 @@ MonoBehaviour:
   - {fileID: 1322909154376149739}
   - {fileID: 4387579293071863640}
   health: 3
+  deathParticles: {fileID: 8866347581163888692, guid: fb81731867964cb458a8a05745f55070, type: 3}
 --- !u!114 &6946765320318935254
 MonoBehaviour:
   m_ObjectHideFlags: 0

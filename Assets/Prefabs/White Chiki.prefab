@@ -762,6 +762,7 @@ MonoBehaviour:
   - {fileID: 3445903973423889530}
   - {fileID: 6382199386247858459}
   health: 2
+  deathParticles: {fileID: 8866347581163888692, guid: fb81731867964cb458a8a05745f55070, type: 3}
 --- !u!114 &6878336471486746648
 MonoBehaviour:
   m_ObjectHideFlags: 0

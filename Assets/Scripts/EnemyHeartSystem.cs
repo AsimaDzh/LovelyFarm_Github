@@ -8,6 +8,8 @@ public class EnemyHeartSystem : MonoBehaviour
     private ScoreManager scoreManager;
     private bool isDead;
 
+    public ParticleSystem deathParticles;
+
     void Start()
     {
         health = enemyHearts.Length;
@@ -21,6 +23,7 @@ public class EnemyHeartSystem : MonoBehaviour
         {
             scoreManager.AddScore(1);
             Destroy(gameObject);
+            Instantiate(deathParticles, transform.position, Quaternion.identity);
         }
     }
 
