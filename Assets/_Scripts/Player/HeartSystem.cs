@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class HeartSystem : MonoBehaviour
 {
-    public GameObject[] hearts;
-    public int health;
+    [SerializeField] private GameObject[] hearts;
+    [SerializeField] private int health;
 
     private bool isDead;
     private UIManager uiManager;
+
 
     void Start()
     {
@@ -14,13 +15,13 @@ public class HeartSystem : MonoBehaviour
         uiManager = GameObject.Find("UI Manager").GetComponent<UIManager>();
     }
 
+
     void Update()
     {
         if (isDead == true)
-        {
             uiManager.ShowGameOverPanel();
-        }
     }
+
 
     public void TakeDamage(int damage)
     {         

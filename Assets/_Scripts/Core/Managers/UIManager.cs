@@ -4,10 +4,11 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI scoreTextUI;
+    [SerializeField] private GameObject gameOverPanel;
+
     private ScoreManager scoreManager;
 
-    public TextMeshProUGUI scoreTextUI;
-    public GameObject gameOverPanel;
 
     void Start()
     {
@@ -15,10 +16,12 @@ public class UIManager : MonoBehaviour
         scoreManager = GameObject.Find("Score Manager").GetComponent<ScoreManager>();
     }
 
+
     void Update()
     {
         scoreTextUI.text = "Points earned: " + scoreManager.score.ToString();
     }
+
 
     public void ShowGameOverPanel()
     {
@@ -26,11 +29,13 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+
     public void RestartGame()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Prototype 2");
     }
+
 
     public void QuitGame()
     {

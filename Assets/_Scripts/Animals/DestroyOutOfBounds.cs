@@ -6,10 +6,12 @@ public class DestroyOutOfBounds : MonoBehaviour
     private float lowerBound = -4.0f;
     private HeartSystem heartSystem;
 
+
     void Awake()
     {
         heartSystem = GameObject.Find("Woman").GetComponent<HeartSystem>();
     }
+
 
     void Update()
     {

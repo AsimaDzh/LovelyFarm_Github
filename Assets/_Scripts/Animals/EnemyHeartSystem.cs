@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class EnemyHeartSystem : MonoBehaviour
 {
-    public GameObject[] enemyHearts;
-    public int health;
+    [SerializeField] private GameObject[] enemyHearts;
+    [SerializeField] private ParticleSystem deathParticles;
+    [SerializeField] private int health;
 
     private ScoreManager scoreManager;
     private bool isDead;
 
-    public ParticleSystem deathParticles;
 
     void Start()
     {
@@ -16,6 +16,7 @@ public class EnemyHeartSystem : MonoBehaviour
 
         scoreManager = GameObject.Find("Score Manager").GetComponent<ScoreManager>();
     }
+
 
     void Update()
     {
@@ -27,6 +28,7 @@ public class EnemyHeartSystem : MonoBehaviour
         }
     }
 
+
     public void TakeDamage(int damage)
     {
         if (isDead) return;
@@ -34,13 +36,12 @@ public class EnemyHeartSystem : MonoBehaviour
 
         int newHealth = Mathf.Max(health - damage, 0);
 
-        // Уничтожаем соответствующие сердечки безопасно (проверяем границы и на null)
+        // Destroy heart icons for lost health
         for (int i = health - 1; i >= newHealth; i--)
         {
             if (i >= 0 && i < enemyHearts.Length && enemyHearts[i] != null)
                 Destroy(enemyHearts[i].gameObject);
         }
-
         health = newHealth;
 
         if (health < 1)

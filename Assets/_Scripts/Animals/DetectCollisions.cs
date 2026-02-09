@@ -4,10 +4,12 @@ public class DetectCollisions : MonoBehaviour
 {
     private EnemyHeartSystem enemyHeartSystem;
 
+
     void Start()
     {
         enemyHeartSystem = GetComponent<EnemyHeartSystem>();
     }
+
 
     private void OnTriggerEnter(Collider other)
     {

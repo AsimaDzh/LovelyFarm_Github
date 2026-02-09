@@ -4,8 +4,7 @@ public class SmoothCamera : MonoBehaviour
 {
     [SerializeField] private Transform lookAt = null;
     [SerializeField] private float smoothSpeed = 5f;
-    [SerializeField] private Vector3 offset;
-    [SerializeField] private Vector3 minValue, maxValue;
+    [SerializeField] private Vector3 offset, minValue, maxValue;
 
     void LateUpdate()
     {
@@ -22,7 +21,6 @@ public class SmoothCamera : MonoBehaviour
             smoothSpeed * Time.deltaTime);
 
         transform.position = smoothPosition;
-
         transform.LookAt(lookAt);
     }
 }
