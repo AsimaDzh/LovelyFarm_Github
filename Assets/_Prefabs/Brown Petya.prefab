@@ -1615,10 +1615,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1211034476971467680}
   - component: {fileID: 2916334189514154156}
-  - component: {fileID: 76726301817933352}
   - component: {fileID: 8882074750301744164}
   - component: {fileID: 6946765320318935254}
   - component: {fileID: 7667167273147933486}
+  - component: {fileID: 76726301817933352}
   - component: {fileID: 1730008872684176694}
   m_Layer: 0
   m_Name: Brown Petya
@@ -1664,28 +1664,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
---- !u!95 &76726301817933352
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7572042470477929692}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 693459689483f9e4aa5a1a6e8b37269e, type: 3}
-  m_Controller: {fileID: 9100000, guid: 89ce2bbff124d224986dcf79ae85990c, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &8882074750301744164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1728,6 +1706,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7935cad06ec6a408f3ecf9b3256271, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &76726301817933352
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7572042470477929692}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 693459689483f9e4aa5a1a6e8b37269e, type: 3}
+  m_Controller: {fileID: 9100000, guid: 89ce2bbff124d224986dcf79ae85990c, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &1730008872684176694
 BoxCollider:
   m_ObjectHideFlags: 0
